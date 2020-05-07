@@ -116,9 +116,12 @@ module.exports.Wideq = function (country, language) {
 
     const parseMon = (data) => {
         const monitorLines = data.split('; ');
+        console.log(monitorLines);
         return {
             onOff: monitorLines[0],
             mode: monitorLines[1],
+            currentTemp: monitorLines[2].substring(4),
+            targetTemp: monitorLines[3].substring(4),
             speed: monitorLines[4].substring(10).replace('\n', '')
         };
     };
