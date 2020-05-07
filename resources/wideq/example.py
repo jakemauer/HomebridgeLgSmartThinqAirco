@@ -87,8 +87,8 @@ def ac_mon(client, device_id):
                 print(
                     '{1}; '
                     '{0.mode.name}; '
-                    'cur {0.temp_cur_c}°C; '
-                    'cfg {0.temp_cfg_c}°C; '
+                    'cur {0.temp_cur_c} C; '
+                    'cfg {0.temp_cfg_c} C; '
                     'fan speed {0.fan_speed.name}'
                     .format(
                         state,
