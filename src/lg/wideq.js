@@ -119,8 +119,6 @@ module.exports.Wideq = function (country, language) {
         return {
             onOff: monitorLines[0],
             mode: monitorLines[1],
-            currentTemp: monitorLines[2].substring(4).replace(' C', ''),
-            targetTemp: monitorLines[3].substring(4).replace(' C', ''),
             speed: monitorLines[4].substring(10).replace('\n', '')
         };
     };
